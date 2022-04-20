@@ -2184,7 +2184,7 @@ u_result RPlidarDriverImplCommon::startMotor()
 {
     if (!_isTofLidar) {
         if (_isSupportingMotorCtrl) { // RPLIDAR A2
-            setMotorPWM(DEFAULT_MOTOR_PWM);
+            setMotorPWM(MAX_MOTOR_PWM);
             delay(500);
             return RESULT_OK;
         }
